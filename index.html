@@ -1,12 +1,327 @@
-<?php  ?>
+
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>Loger-Сайт для розроботчиков</title>
+    <title>ChaTemplate - CSS для Chatovod</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="ru" />
+    <meta http-equiv="expires" content="Wed, 16 Feb 1975 08:21:57 GMT" />
+    <meta name="robots" content="index,all" />
+    <meta name="audience" content="all" />
+    <meta name="keywords" content="ChaTemplate - CSS для Chatovod, чат, chat, чат без регистрации"/>
+    <meta name="description" content="ChaTemplate - CSS для Chatovod - отличный чат без регистрации! Фотографии участников, знакомства, подарки, игры и развлечения." />
+    <link rel="SHORTCUT ICON" href="https://madeas.ru/wp-content/uploads/2017/10/favicon.png" />
+    
+    
+    
+    
+    <link rel="apple-touch-icon-precomposed" href="//st1.chatovod.ru/i/apple-touch-icon-precomposed.png" />
+    <meta name="mrc__share_title" content="ChaTemplate - CSS для Chatovod"/>
+    <meta name="mrc__share_description" content="Приглашаю друзей к общению в чате!"/>
+    <meta name="yandex-verification" content="f8af8ffad7155fff" />
+    <link rel="image_src" href="http://st1.chatovod.ru/i/smile48.png"/>
+    
+    <link href="//st1.chatovod.ru/css/widget/style2.css?79" rel="stylesheet" media="all" />
+    <!--[if lte IE 7]>
+    <link href="//st1.chatovod.ru/css/widget/style_ie7.css?7" rel="stylesheet" media="all" />
+    <![endif]--><style type="text/css">
+.chatFooter {background-image:url("//st1.chatovod.ru/i/widget/fon.png");background-position:left top;
+background-repeat:repeat-x;}
+.chatMain {background-image:url("//st1.chatovod.ru/i/widget/fon.png");background-position:left bottom;
+background-position:left 0 bottom 64px;
+background-repeat:repeat-x;}
+body {color:#222222;}
+a {color:#000000;}
+.chatFooter .chatFooterWrapper .chatPanel div a span {border-bottom-color:#000000;}
+.chatHeader {background-color:#b6e245;}
+.chatTabs > ul > li.chatTab.chatTabActive > a, .chatTabs > ul > li.chatTab > a:hover, .chatTabs > ul > li.chatTab > a.active {background-color:#b6e245;}
+.chat {border-color:#a0ca2d;}
+.chatHeader {border-bottom-color:#a0ca2d;}
+.chatHeader {color:#4a600d;}
+.chatTabs > ul > li.chatTab.chatTabActive > a, .chatTabs > ul > li.chatTab > a:hover, .chatTabs > ul > li.chatTab > a.active {color:#4a600d;}
+.chatHeader .chatTitle {text-shadow:1px 1px 0 #d9f18c;}
+.chatTabs > ul > li.chatTab > a {background-color:#eaeaea;}
+.chatHeader .chatTopLine {background-color:#cff265}
+.chatHeader .chatTopLine {border-color:#b5db4e;}
+.chatTopLineWrapper > ul > li > a {color:#4a600d;}
+.chatTopLineWrapper > ul > li > a {text-shadow:1px 1px 0 #e1f69b;}
+.chatTopLineWrapper > ul > li > a:hover {background-color:#a0ca2d;}
+.chatTabs > ul > li.chatTab > a {color:#333333;}
+.chatUserFrom, .chatPeople ul.chatPeopleList li a.chatUser {color:#424242;}
+.chatMessageToMe .chatToUser {background-color:#424242;}
+.chatMain, .chatFooter, .chatEventDiv, .chatPopupMenuDiv1, .chatPopupMenuDiv2, .smilesBox, .chatPeople ul.chatPeopleList li.hover {background-color:#f5f4ef;}
+.chatMain .chatMessages, .chatMain .chatPrivateMessages {font-size:10pt;}
+</style><link href="custom.css?4760" rel="stylesheet" />
+    
+    
+    
+    
+
 </head>
-<body>
-<h1>Loger Сайт-для розроботчиков</h1>
-<p><strong>Тех роботы</strong></p>
+
+<body class="">
+<script type="text/javascript">
+    new Image().src = "https://count"+"er.ya"+"dro.ru/h"+"it;chatovod?r"+
+        escape(document.referrer)+((typeof(screen)=="undefined")?"":
+            ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+        ";"+Math.random();</script><img class="hidden" src="//st1.chatovod.ru/i/smile120x120.jpg" width="120" height="120" alt="Odnoklassniki image"/>
+<h1 style="display:none;">ChaTemplate - CSS для Chatovod</h1>
+<div class="chat" id="chat">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="chatHeader">
+        <div class="chatHeaderWrapper">
+            <div class="chatTitle">
+                ChaTemplate - CSS для Chatovod
+            </div>
+        </div>
+        <div class="chatTopLine">
+            <div class="chatTopLineWrapper">
+                <ul>
+                    <li id="profile-menu" class="chatMenuItemWithSeparator" style="opacity: 1;"><a href="#"><span class="menu_profile_title">мой профиль</span></a><ul id="chatMainMenuProfile">
+                        <li id="register-menu-item"><a href="/register/?nick=" onclick="return chatOpenPopup('/register/?nick=' + encodeURIComponent(chat.userNick),'reg');"><span class="msi msi_vcard_add"></span><span class="mst">Зарегистрировать ник</span></a></li>
+                        <li><a href="/id0/?nick=" onclick="return chatOpenPopup('/id'+chat.loggedId+'/'+(chat.loggedId==0?'?nick=' + encodeURIComponent(chat.userNick):''),'reg');"><span class="msi msi_vcard"></span><span class="mst">Мой профиль</span></a></li>
+                        <li><a href="/id0/edit/?nick=" onclick="return chatOpenPopup('/id'+chat.loggedId+'/edit/'+(chat.loggedId==0?'?nick=' + encodeURIComponent(chat.userNick):''),'reg');"><span class="msi msi_vcard_edit"></span><span class="mst">Мои настройки</span></a></li>
+                        <li><a href="/id0/edit/?cat=vip&nick=" onclick="return chatOpenPopup('/id'+chat.loggedId+'/edit/?cat=vip'+(chat.loggedId==0?'&nick=' + encodeURIComponent(chat.userNick):''),'reg');"><span class="msi msi_wand"></span><span class="mst">VIP-настройки</span></a></li>
+                        <li><a href="/id0/photos/?nick=" onclick="return chatOpenPopup('/id'+chat.loggedId+'/photos/'+(chat.loggedId==0?'?nick=' + encodeURIComponent(chat.userNick):''),'reg');"><span class="msi msi_photos"></span><span class="mst">Мои фотографии</span></a></li>
+                        <li><a href="/id0/guests/?nick=" onclick="return chatOpenPopup('/id'+chat.loggedId+'/guests/'+(chat.loggedId==0?'?nick=' + encodeURIComponent(chat.userNick):''),'ignore');"><span class="msi msi_group"></span><span class="mst">Мои гости</span></a></li>
+                        <li><a href="/id0/edit/?cat=bal&nick=" onclick="return chatOpenPopup('/id'+chat.loggedId+'/edit/?cat=bal'+(chat.loggedId==0?'&nick=' + encodeURIComponent(chat.userNick):''),'reg');"><span class="msi msi_coins"></span><span class="mst">Мой счёт</span></a></li>
+                        <li><a href="/id0/friends/?nick=" onclick="return chatOpenPopup('/id'+chat.loggedId+'/friends/'+(chat.loggedId==0?'?nick=' + encodeURIComponent(chat.userNick):''),'friends');"><span class="msi msi_group"></span><span class="mst">Друзья</span></a></li>
+                        
+                        <li><a href="/id0/ignore/?nick=" onclick="return chatOpenPopup('/id'+chat.loggedId+'/ignore/'+(chat.loggedId==0?'?nick=' + encodeURIComponent(chat.userNick):''),'ignore');"><span class="msi msi_ignore"></span><span class="mst">Игнор</span></a></li>
+                        <li><a href="#" onclick="if (chat.logged) chat.chatLeave();return false;"><span class="msi msi_cross"></span><span class="mst">Выйти из чата</span></a></li>
+                    </ul></li>
+                    <li class="chatMenuItemWithSeparator" style="opacity: 1;"><a href="#">Чат</a>
+                        <ul id="chatMainMenuChat">
+                            <li><a href="/ChaTemplate/users/" onclick="return chatOpenPopup('/ChaTemplate/users/','users');"><span class="msi msi_group"></span><span class="mst">Пользователи чата</span></a></li>
+                            <li><a href="/ChaTemplate/administration/" onclick="return chatOpenPopup('/ChaTemplate/administration/','admins');"><span class="msi msi_shield"></span><span class="mst">Администрация чата</span></a></li>
+                            <li><a href="/ChaTemplate/gallery/" onclick="return chatOpenPopup('/ChaTemplate/gallery/','gallery');"><span class="msi msi_photos"></span><span class="mst">Фотогалерея</span></a></li>
+                            <li><a href="/ChaTemplate/news/" onclick="return chatOpenPopup('/ChaTemplate/news/','news');"><span class="msi msi_transmit_blue"></span><span class="mst">Новости чата</span></a></li>
+                            <li><a href="/ChaTemplate/history/" onclick="return chatOpenPopup('/ChaTemplate/history/','history');"><span class="msi msi_report"></span><span class="mst">История сообщений</span></a></li>
+                            <li><a href="/ChaTemplate/rules/" onclick="return chatOpenPopup('/ChaTemplate/rules/','rules');"><span class="msi msi_script"></span><span class="mst">Правила чата</span></a></li>
+                            <li><a href="/ChaTemplate/code/" onclick="return chatOpenPopup('/ChaTemplate/code/','code');"><span class="msi msi_layout_add"></span><span class="mst">Добавить на свой сайт</span></a></li>
+                            
+                            <li><a href="https://chatemplate.chatovod.ru/" target="_blank"><span class="msi msi_application_double"></span><span class="mst">В отдельной вкладке</span></a></li>
+                        </ul>
+                    </li>
+                    <li style="opacity: 1;"><a href="http://chatovod.ru/"><img src="//st2.chatovod.ru/i/widget/logo.png" alt="chatovod" width="50" height="15" style="vertical-align: top"/></a><ul id="chatMainMenuChatovod">
+                        <li><a href="http://chatovod.ru/chats/" target="_blank">Каталог чатов</a></li>
+                        <li><a href="http://chatovod.ru/" target="_blank" style="font-weight:bold;">Создать свой чат</a></li>
+                        <li><a href="http://chatovod.ru/partner/" target="_blank">Управление чатом</a></li>
+                        <li><a href="http://ads.chatovod.ru/" target="_blank">Разместить рекламу</a></li>
+                    </ul></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <div class="chatMain" id="chatMain">
+        <div class="chatTabs">
+            <div class="chatTabsLeft"></div>
+            <ul>
+                <li id="chat_main" class="chatTab chatTabActive"><a href="#">Общий</a></li>
+                
+            </ul>
+            <div class="chatTabsRight"></div>
+        </div>
+        <div class="chatMessages vscrollable" id="chatChannel_main"></div>
+        <div class="chatPrivates"></div>
+        <div class="chatPeople vscrollable">
+            <div class="chatPeopleTitle">В чате <span class="chatUsersCount">?</span> чел.</div>
+            <ul class="chatPeopleList"></ul>
+        </div>
+        
+        
+        
+        
+    </div>
+    <div class="chatFooter">
+        <div class="chatFooterWrapper">
+            <div class="chatSetupNickname">
+                
+                <input type="button" value="Войти в чат" id="join-chat-button"/>
+                
+                
+            </div>
+            <div class="chatPanel">
+                <div class="chatSendLinksPanel"><a href="#" class="chatLinkSmiles"><span>смайлы</span></a><a href="#" class="chatLinkImage" title="Вставка картинки или видео"><span>медиа</span></a><a href="/id0" onclick="return chatOpenPopup('/id' + chat.loggedId,'reg');" class="chatLinkProfile"><span>мой профиль</span></a><a href="/id0/edit/?cat=bal&nick=" onclick="return chatOpenPopup('/id'+chat.loggedId+'/edit/?cat=bal'+(chat.loggedId==0?'&nick=' + encodeURIComponent(chat.userNick):''),'reg');" class="chatLinkGold" title="Золотые"><span>счёт</span></a><a href="/id0/edit/?cat=vip&nick=" onclick="return chatOpenPopup('/id'+chat.loggedId+'/edit/?cat=vip'+(chat.loggedId==0?'&nick=' + encodeURIComponent(chat.userNick):''),'reg');" class="chatLinkVip" title="VIP-статус"></a><a href="/ChaTemplate/mod/" onclick="return chatOpenPopup('/ChaTemplate/mod/','mod');" class="chatLinkModerate" title="Модерирование чата"></a><a href="#" class="chatLinkMore"><span>еще...</span></a></div>
+                
+                <div class="chatSendTextPanel"><input name="chatText" type="text" autocomplete="off" class="chatSendText chatInputText" maxlength="1000" x-webkit-speech="x-webkit-speech"/></div>
+                <div class="chatSendButtonPanel"><input type="button" class="chatSendButton" value="Отправить"/></div>
+                
+                <div class="chatSoundPanel"><a href="#" class="muted" title="звук выключен"><span>звук выкл.</span></a></div>
+                <div class="chatSendExitPanel">
+                    
+                    <select>
+                        <option value="ONLINE" selected="selected">Онлайн</option>
+                        <option style="color:#999999;" value="AWAY">Отошел</option>
+                        <option style="color:#999999;" value="DND">Не беспокоить</option>
+                        <option style="color:#999999;" value="CUSTOM">Свой статус</option>
+                        <option value="EXIT">Выйти</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chatFull chatSpecifyPassword hidden">
+        <div class="transparent"></div>
+        <div class="center-wrapper">
+            <div class="content">
+                <form method="get" action="" onsubmit="return chat.chatEnter2();">
+                    <p id="sign-in-label"><a href="https://chatovod.ru/account/login/?return_to=https%3A%2F%2Fchatemplate.chatovod.ru%2F%3Fautologin%3D1">Войдите в аккаунт</a></p>
+                    
+                    
+                    <label id="new-nick-label" for="nick">Или придумайте ник:</label>
+                    <label id="existing-nick-label" for="nick">Ваш ник в чате:</label>
+                    <input id="nick" name="chatNickname" type="text" autocomplete="off" onclick="this.select();" value="" maxlength="20"/>
+                    
+                    <p class="error" id="auth2-error"></p>
+                    <p id="join-buttons" class="justify"><input type="submit" id="join-chat-button2" value="Войти в чат"/> <a href="#" onclick="return chat.closeJoinDialog();">Отмена</a><span class="spacer"></span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="smilesBox hidden">
+        <p>Основные смайлы:</p>
+        <a href="#" onclick="return chat.chatSmile(':21:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/1.png"/></a> <a href="#" onclick="return chat.chatSmile(':22:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/2.png"/></a> <a href="#" onclick="return chat.chatSmile(':23:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/3.png"/></a> <a href="#" onclick="return chat.chatSmile(':24:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/4.png"/></a> <a href="#" onclick="return chat.chatSmile(':25:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/5.png"/></a> <a href="#" onclick="return chat.chatSmile(':26:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/6.png"/></a> <a href="#" onclick="return chat.chatSmile(':27:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/7.png"/></a> <a href="#" onclick="return chat.chatSmile(':28:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/8.png"/></a> <a href="#" onclick="return chat.chatSmile(':29:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/9.png"/></a> <a href="#" onclick="return chat.chatSmile(':30:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/10.png"/></a> <a href="#" onclick="return chat.chatSmile(':32:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/12.png"/></a> <a href="#" onclick="return chat.chatSmile(':34:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/14.png"/></a> <a href="#" onclick="return chat.chatSmile(':35:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/15.png"/></a> <a href="#" onclick="return chat.chatSmile(':36:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/16.png"/></a> <a href="#" onclick="return chat.chatSmile(':38:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/18.png"/></a> <a href="#" onclick="return chat.chatSmile(':39:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/19.png"/></a> <a href="#" onclick="return chat.chatSmile(':41:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/21.png"/></a> <a href="#" onclick="return chat.chatSmile(':42:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/22.png"/></a> <a href="#" onclick="return chat.chatSmile(':43:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/23.png"/></a> <a href="#" onclick="return chat.chatSmile(':44:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/24.png"/></a> <a href="#" onclick="return chat.chatSmile(':46:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/26.png"/></a> <a href="#" onclick="return chat.chatSmile(':47:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/27.png"/></a> <a href="#" onclick="return chat.chatSmile(':49:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/29.png"/></a> <a href="#" onclick="return chat.chatSmile(':50:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/30.png"/></a> <a href="#" onclick="return chat.chatSmile('::1:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/1.gif"/></a> <a href="#" onclick="return chat.chatSmile('::2:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/2.gif"/></a> <a href="#" onclick="return chat.chatSmile('::3:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/3.gif"/></a> <a href="#" onclick="return chat.chatSmile('::4:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/4.gif"/></a> <a href="#" onclick="return chat.chatSmile('::5:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/5.gif"/></a> <a href="#" onclick="return chat.chatSmile('::6:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/6.gif"/></a> <a href="#" onclick="return chat.chatSmile('::7:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/7.gif"/></a> <a href="#" onclick="return chat.chatSmile('::8:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/8.gif"/></a> <a href="#" onclick="return chat.chatSmile('::9:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/9.gif"/></a> <a href="#" onclick="return chat.chatSmile('::10:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/10.gif"/></a> <a href="#" onclick="return chat.chatSmile('::11:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/11.gif"/></a> <a href="#" onclick="return chat.chatSmile('::12:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/12.gif"/></a> <a href="#" onclick="return chat.chatSmile('::13:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/13.gif"/></a> <a href="#" onclick="return chat.chatSmile('::14:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/14.gif"/></a> <a href="#" onclick="return chat.chatSmile('::15:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/15.gif"/></a> <a href="#" onclick="return chat.chatSmile('::16:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/16.gif"/></a> <a href="#" onclick="return chat.chatSmile('::17:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/17.gif"/></a> <a href="#" onclick="return chat.chatSmile('::18:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/18.gif"/></a> <a href="#" onclick="return chat.chatSmile('::19:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/19.gif"/></a> <a href="#" onclick="return chat.chatSmile('::20:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/20.gif"/></a> <a href="#" onclick="return chat.chatSmile('::21:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/21.gif"/></a> <a href="#" onclick="return chat.chatSmile('::22:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/22.gif"/></a> <a href="#" onclick="return chat.chatSmile('::23:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/23.gif"/></a> <a href="#" onclick="return chat.chatSmile('::24:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/24.gif"/></a> <a href="#" onclick="return chat.chatSmile(':1_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/1.png"/></a> <a href="#" onclick="return chat.chatSmile(':2_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/2.png"/></a> <a href="#" onclick="return chat.chatSmile(':3_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/3.png"/></a> <a href="#" onclick="return chat.chatSmile(':4_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/4.png"/></a> <a href="#" onclick="return chat.chatSmile(':5_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/5.png"/></a> <a href="#" onclick="return chat.chatSmile(':6_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/6.png"/></a> <a href="#" onclick="return chat.chatSmile(':7_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/7.png"/></a> <a href="#" onclick="return chat.chatSmile(':8_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/8.png"/></a> <a href="#" onclick="return chat.chatSmile(':9_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/9.png"/></a> <a href="#" onclick="return chat.chatSmile(':10_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/10.png"/></a> <a href="#" onclick="return chat.chatSmile(':11_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/11.png"/></a> <a href="#" onclick="return chat.chatSmile(':12_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/12.png"/></a> <a href="#" onclick="return chat.chatSmile(':13_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/13.png"/></a> <a href="#" onclick="return chat.chatSmile(':14_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/14.png"/></a> <a href="#" onclick="return chat.chatSmile(':15_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/15.png"/></a> <a href="#" onclick="return chat.chatSmile(':16_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/16.png"/></a> <a href="#" onclick="return chat.chatSmile(':17_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/17.png"/></a> <a href="#" onclick="return chat.chatSmile(':18_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/18.png"/></a> <a href="#" onclick="return chat.chatSmile(':19_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/19.png"/></a> <a href="#" onclick="return chat.chatSmile(':20_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/20.png"/></a> <a href="#" onclick="return chat.chatSmile(':21_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/21.png"/></a> <a href="#" onclick="return chat.chatSmile(':22_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/22.png"/></a> <a href="#" onclick="return chat.chatSmile(':23_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/23.png"/></a> <a href="#" onclick="return chat.chatSmile(':24_:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/stc4/24.png"/></a> <a href="#" onclick="return chat.chatSmile(':::1:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/1.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::2:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/2.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::3:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/3.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::6:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/6.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::8:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/8.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::9:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/9.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::10:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/10.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::11:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/11.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::12:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/12.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::14:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/14.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::15:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/15.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::16:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/16.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::18:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/18.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::19:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/19.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::20:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/20.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::21:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/21.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::22:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/22.gif"/></a> <a href="#" onclick="return chat.chatSmile(':::23:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/23.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_1:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/1.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_2:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/2.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_3:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/3.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_4:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/4.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_5:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/5.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_6:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/6.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_7:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/7.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_8:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/8.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_9:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/9.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_10:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/10.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_11:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/11.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_12:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/12.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_13:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/13.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_14:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/14.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_15:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/15.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_16:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/16.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_17:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/17.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_18:');"><img width="60" height="60" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml7/18.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_19_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/19.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_20_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/20.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_21_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/21.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_23_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/23.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_24:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/24.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_1_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/1.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_3_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/3.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_4_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/4.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_5_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/5.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_7_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/7.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_8_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/8.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_9_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/9.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_10_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/10.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_11_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/11.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_12_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/12.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_14_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/14.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_17_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/17.gif"/></a> <a href="#" onclick="return chat.chatSmile(':_18_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/18.gif"/></a> <a href="#" onclick="return chat.chatSmile(':1:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/1.png"/></a> <a href="#" onclick="return chat.chatSmile(':2:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/2.png"/></a> <a href="#" onclick="return chat.chatSmile(':3:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/3.png"/></a> <a href="#" onclick="return chat.chatSmile(':4:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/4.png"/></a> <a href="#" onclick="return chat.chatSmile(':5:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/5.png"/></a> <a href="#" onclick="return chat.chatSmile(':6:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/6.png"/></a> <a href="#" onclick="return chat.chatSmile(':7:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/7.png"/></a> <a href="#" onclick="return chat.chatSmile(':8:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/8.png"/></a> <a href="#" onclick="return chat.chatSmile(':9:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/9.png"/></a> <a href="#" onclick="return chat.chatSmile(':10:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/10.png"/></a> <a href="#" onclick="return chat.chatSmile(':11:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/11.png"/></a> <a href="#" onclick="return chat.chatSmile(':12:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/12.png"/></a> <a href="#" onclick="return chat.chatSmile(':13:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/13.png"/></a> <a href="#" onclick="return chat.chatSmile(':14:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/14.png"/></a> <a href="#" onclick="return chat.chatSmile(':15:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/15.png"/></a> <a href="#" onclick="return chat.chatSmile(':16:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/16.png"/></a> <a href="#" onclick="return chat.chatSmile(':17:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/17.png"/></a> <a href="#" onclick="return chat.chatSmile(':18:');"><img width="48" height="48" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml5/18.png"/></a> <p>Для <a href="#" onclick="return chatOpenPopup('/id'+chat.loggedId+'/edit/?cat=vip','vip');">VIP-пользователей</a>:</p><a href="#" onclick="return chat.chatSmile(':vip_::4:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/4.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip_::7:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/7.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip_::13:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/13.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip_::17:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/17.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip_::24:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/24.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip_::5:');"><img width="64" height="64" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml3/25.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip__22_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/22.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip__2_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/2.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip__6_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/6.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip__13_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/13.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip__15_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/15.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip__16_:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml8/16.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip_31:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/11.png"/></a> <a href="#" onclick="return chat.chatSmile(':vip_33:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/13.png"/></a> <a href="#" onclick="return chat.chatSmile(':vip_37:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/17.png"/></a> <a href="#" onclick="return chat.chatSmile(':vip_40:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/20.png"/></a> <a href="#" onclick="return chat.chatSmile(':vip_45:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/25.png"/></a> <a href="#" onclick="return chat.chatSmile(':vip_48:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml1/28.png"/></a> <a href="#" onclick="return chat.chatSmile(':vip_25:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/25.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip_26:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/26.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip_27:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/27.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip_28:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/28.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip_29:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/29.gif"/></a> <a href="#" onclick="return chat.chatSmile(':vip_30:');"><img width="32" height="32" src="//st1.chatovod.ru/i/blank.gif" alt="http://demo.madeas.ru/img/chat/sml4/30.gif"/></a> 
+    </div>
+</div>
+
+<style type="text/css">
+    .chatPrivates {
+        display: block!important;
+    }
+</style>
+<script type="text/javascript">
+    
+</script>
+
+<!--[if lt IE 8]>
+<script type="text/javascript">
+    document.getElementById("chat").innerHTML = 'Ваш браузер устарел и не поддерживается чатом. Установите <a rel="nofollow" href="https://www.google.com/chrome/" target="_blank">Chrome</a>, <a rel="nofollow" href="http://firefox.com" target="_blank">Firefox</a> или Opera.';
+</script>
+<![endif]-->
+
+
+<script type="text/javascript" src="//st1.chatovod.ru/js/widget.js?16"></script>
+
+
+<script type="text/javascript">
+    var opts = {};
+    opts.build = 16;
+    opts.chatDisableLoad = false;
+    
+    
+    if (document.cookie.indexOf("tc_1318376724") < 0) {
+        opts.chatDisableLoad = true;
+        var tmp = document.createElement('FORM');
+        tmp.method = "POST";
+        tmp.action = "";
+        document.body.appendChild(tmp);
+        tmp.submit();
+    } else {
+        document.cookie = 'tc=;domain=.'+document.domain+';expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    }
+    
+    opts.chatId = 239166;
+    opts.roomName = "ChaTemplate";
+    opts.csrfKey = "de568defca85d2f6af97029c4bfcf1d6";
+    opts.logged = false;
+    opts.loggedId = 0;
+    //not used
+    //opts.chatAdsEnabled = false;
+    
+    opts.addNewsEnabled = true;
+    opts.userNick = "";
+    opts.chatAutoFocusDisabled = true;
+    
+    opts.tryToLoginWithNick = "";
+    opts.authError = null;
+    opts.logoutDone = false;
+    
+    opts.accountId = 0;
+    opts.expires = 0;
+    opts.key = null;
+    
+    
+    opts.forceAutoLogin = false;
+
+    opts.chatSettings = {
+        cacheSize: -1,
+        ignoreLoginMessages: true,
+        shortTimeFormat: "HH:mm"
+    };
+    opts.chatUserRights = "";
+    
+    opts.chatForcePrivate = "";
+    opts.chatIgnores = {};
+    
+    var chat = new com.chatovod.Widget(opts);
+    chat.addApp("18832","\u041F\u0440\u0430\u0432\u0438\u043B\u0430 \u0447\u0430\u0442\u0430","\/\/st1.chatovod.ru\/i\/apps\/app.png","\u041F\u0440\u0430\u0432\u0438\u043B\u0430 \u0447\u0430\u0442\u0430", 3, "http:\/\/chatemplate.chatovod.ru\/ChaTemplate\/rules\/");chat.addApp("18726","\u0421\u0430\u0439\u0442 \u043F\u0440\u043E\u0435\u043A\u0442\u0430","https:\/\/madeas.ru\/wp-content\/uploads\/2017\/10\/favicon.png","\u0421\u0430\u0439\u0442 ChaTemplate", 3, "https:\/\/madeas.ru\/chatemplate\/");chat.addApp("18809","\u0428\u0430\u0431\u043B\u043E\u043D\u044B \u0434\u043B\u044F \u0447\u0430\u0442\u043E\u0432","https:\/\/madeas.ru\/wp-content\/uploads\/2017\/10\/favicon.png","\u041A\u0430\u0442\u0430\u043B\u043E\u0433 \u0448\u0430\u0431\u043B\u043E\u043D\u043E\u0432", 0, "https:\/\/madeas.ru\/product-category\/templates\/");chat.addApp("19459","\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435!","http:\/\/www.cyrustechnoedge.com\/images\/warning.png","14.03.18 | \u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 \u0448\u0430\u0431\u043B\u043E\u043D\u0430 Sea breeze ver=.1.0.4", 0, "https:\/\/madeas.ru\/product\/sea-breeze\/");chat.addApp("19461","\u0421\u0432\u0435\u0436\u0435\u0435!","http:\/\/www.cyrustechnoedge.com\/images\/warning.png","12.03.18 | \u0420\u0435\u043B\u0438\u0437 \u0448\u0430\u0431\u043B\u043E\u043D\u0430", 0, "https:\/\/madeas.ru\/product\/arabika\/");chat.addApp("19462","\u0424\u043E\u0440\u043C\u044B \u0432\u0445\u043E\u0434\u0430","https:\/\/madeas.ru\/wp-content\/uploads\/2017\/10\/favicon.png","\u0428\u0430\u0431\u043B\u043E\u043D\u044B \u0444\u043E\u0440\u043C\u044B \u0432\u0445\u043E\u0434\u0430 \u0432 \u0447\u0430\u0442", 0, "https:\/\/madeas.ru\/product-category\/login-form\/");chat.addApp("18776","FAQ \u043F\u043E CSS","https:\/\/madeas.ru\/wp-content\/uploads\/2017\/10\/favicon.png","\u0427\u0430\u0441\u0442\u043E \u0437\u0430\u0434\u0430\u0432\u0430\u0435\u043C\u044B\u0435 \u0432\u043E\u043F\u0440\u043E\u0441\u044B", 3, "https:\/\/madeas.ru\/chatemplate\/faq\/");chat.addApp("19429","\u0421\u043C\u0430\u0439\u043B\u044B \u0432 \u0447\u0430\u0442","https:\/\/madeas.ru\/wp-content\/uploads\/2017\/10\/favicon.png","\u041D\u0430\u0431\u043E\u0440\u044B \u0441\u043C\u0430\u0439\u043B\u043E\u0432 \u0434\u043B\u044F \u0447\u0430\u0442\u0430", 3, "https:\/\/madeas.ru\/chatemplate\/\u0441\u043C\u0430\u0439\u043B\u044B\/");chat.addApp("18991","\u0418\u043A\u043E\u043D\u043A\u0438","https:\/\/madeas.ru\/wp-content\/uploads\/2017\/10\/favicon.png","FAQ \u043F\u043E \u0441\u043C\u0435\u043D\u0435 \u0438\u043A\u043E\u043D\u043E\u043A \u0432 \u0447\u0430\u0442\u0435", 3, "https:\/\/madeas.ru\/chatemplate\/\u043A\u0430\u043A-\u0441\u043C\u0435\u043D\u0438\u0442\u044C-\u0438\u043A\u043E\u043D\u043A\u0438-\u0432-\u0447\u0430\u0442\u0435");chat.addApp("18992","\u041A\u043D\u043E\u043F\u043A\u0438","https:\/\/madeas.ru\/wp-content\/uploads\/2017\/10\/favicon.png","\u042D\u0444\u0444\u0435\u043A\u0442\u044B \u0434\u043B\u044F \u043A\u043D\u043E\u043F\u043E\u043A \u0447\u0430\u0442\u0430", 3, "https:\/\/madeas.ru\/chatemplate\/\u043F\u0440\u043E\u0441\u0442\u044B\u0435-\u044D\u0444\u0444\u0435\u043A\u0442\u044B-\u0434\u043B\u044F-\u043A\u043D\u043E\u043F\u043E\u043A");chat.addApp("18771","\u041C\u044B \u0412\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u0435","http:\/\/st1.chatovod.ru\/i\/apps\/vk16.png","\u041E\u0444\u0438\u0446\u0438\u0430\u043B\u044C\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u0412\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u0435", 3, "https:\/\/vk.com\/chatemplate");chat.addApp("18777","\u041E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u043E\u0442\u0437\u044B\u0432","https:\/\/madeas.ru\/wp-content\/uploads\/2017\/10\/favicon.png","\u041E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0441\u0432\u043E\u0439 \u043E\u0442\u0437\u044B\u0432", 3, "https:\/\/madeas.ru\/guestbook\/");chat.addApp("19024","\u0417\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u0448\u0430\u0431\u043B\u043E\u043D","\/\/st1.chatovod.ru\/i\/apps\/app.png","\u0417\u0430\u043A\u0430\u0437 \u0448\u0430\u0431\u043B\u043E\u043D\u0430", 3, "https:\/\/madeas.ru\/chatemplate\/get_template\/");chat.addApp("18770","\u0424\u043E\u0440\u0443\u043C","http:\/\/chatemplate.chatovod.ru\/favicon.ico","\u041E\u0431\u0441\u0443\u0434\u0438\u0442\u044C \u043D\u0430 \u0444\u043E\u0440\u0443\u043C\u0435", 3, "http:\/\/forum.chatovod.com\/viewtopic.php?id=3737");chat.addApp("18811","Chatovod.ru","http:\/\/chatemplate.chatovod.ru\/favicon.ico","chatovod", 3, "http:\/\/chatovod.ru");chat.addApp("13810","\u041D\u043E\u0432\u043E\u0441\u0442\u0438","\/\/st1.chatovod.ru\/i\/hot.png","\u0410\u043A\u0442\u0443\u0430\u043B\u044C\u043D\u044B\u0435 \u043D\u043E\u0432\u043E\u0441\u0442\u0438", 3, "\/hot\/");chat.addApp("18810","support (@mail)","http:\/\/forum.sadov.com\/images\/twilight\/uqm\/email.png","\u041E\u0431\u0440\u0430\u0442\u043D\u0430\u044F \u0441\u0432\u044F\u0437\u044C", 3, "mailto:support@madeas.ru");
+
+</script>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10845308-1'],
+        ['_setDomainName', '.chatovod.ru'],
+        ["_addOrganic", "mail.ru", "q"],
+        ["_addOrganic","rambler.ru", "words"],
+        ["_addOrganic","nigma.ru", "s"],
+        ["_addOrganic","blogs.yandex.ru", "text"],
+        ["_addOrganic","webalta.ru", "q"],
+        ["_addOrganic","aport.ru", "r"],
+        ["_addOrganic","akavita.by", "z"],
+        ["_addOrganic","meta.ua", "q"],
+        ["_addOrganic","bigmir.net", "q"],
+        ["_addOrganic","tut.by", "query"],
+        ["_addOrganic","all.by", "query"],
+        ["_addOrganic","i.ua", "q"],
+        ["_addOrganic","online.ua", "q"],
+        ["_addOrganic","a.ua", "s"],
+        ["_addOrganic","ukr.net", "search_query"],
+        ["_addOrganic","search.com.ua", "q"],
+        ["_addOrganic","search.ua", "query"],
+        ["_addOrganic","poisk.ru", "text"],
+        ["_addOrganic","km.ru", "sq"],
+        ["_addOrganic","liveinternet.ru", "ask"],
+        ["_addOrganic","gogo.ru", "q"],
+        ["_addOrganic","gde.ru", "keywords"],
+        ["_addOrganic","quintura.ru", "request"],
+        ['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
 </body>
 </html>
